@@ -4,6 +4,10 @@ class SearchBar extends React.Component {
   state = {
     searchTerm: ''
   };
+  inputHandler(evt) {
+    const searchValue = evt.target.value;
+    return searchValue;
+  }
   render () {
     return (
       <div className="search-bar ui segment">
