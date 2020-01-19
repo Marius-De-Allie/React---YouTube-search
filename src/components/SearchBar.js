@@ -4,7 +4,10 @@ class SearchBar extends React.Component {
   render () {
     return (
       <div className="search-bar ui segment">
-
+        <form className="ui form">
+          <div className="field">
+          </div>
+        </form>
       </div>
     );
   }
