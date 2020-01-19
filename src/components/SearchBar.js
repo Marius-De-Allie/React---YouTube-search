@@ -14,7 +14,9 @@ class SearchBar extends React.Component {
         <form className="ui form">
           <div className="field">
             <label htmlFor="search-input">Video Search</label>
-            <input id="search-input" type="text"/>
+            <input id="search-input" type="text" value={evt => {
+              this.inputHandler(evt)
+            }}/>
           </div>
         </form>
       </div>
