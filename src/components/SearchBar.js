@@ -6,6 +6,8 @@ class SearchBar extends React.Component {
       <div className="search-bar ui segment">
         <form className="ui form">
           <div className="field">
+            <label htmlFor="search-input">Video Search</label>
+            <input id="search-input" type="text"/>
           </div>
         </form>
       </div>
