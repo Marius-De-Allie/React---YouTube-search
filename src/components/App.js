@@ -6,8 +6,7 @@ import SearchBar from './SearchBar';
 class App extends React.Component {
 
 // Form submit handler method.
-onFormSubmit = (term) => {
-  evt.preventDefault();
+onSearchTermSubmit = (searchTerm) => {
 
 };
 
