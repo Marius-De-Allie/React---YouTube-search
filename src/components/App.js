@@ -14,7 +14,7 @@ onSearchTermSubmit = (searchTerm) => {
   render() {
     return (
       <div className="ui container">
-        <SearchBar />
+        <SearchBar onSearchTermSubmit={this.onSearchTermSubmit} />
       </div>
     );
   }
