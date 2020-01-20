@@ -9,3 +9,5 @@ const youtTube = axios.create({
     key: 'AIzaSyDhfPFv85-koi4fVvDl89KmoPYHbH4i0UY'
   }
 });
+
+export default youTube;
