@@ -8,6 +8,11 @@ class SearchBar extends React.Component {
     const searchValue = evt.target.value;
     this.setState(() => ({searchTerm: searchValue}));
   };
+// Form submit handler method.
+  onFormSubmit = (evt) => {
+    evt.preventDefault()
+
+  };
   render () {
     return (
       <div className="search-bar ui segment">
