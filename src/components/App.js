@@ -21,6 +21,11 @@ onSearchTermSubmit = async (searchTerm) => {
       key: 'AIzaSyDhfPFv85-koi4fVvDl89KmoPYHbH4i0UY'
     }
   });
+  console.log(response.data.items);
+  // Update component state with return search results.
+  this.setState(() => ({
+    videos: [...response.data.items]
+  }));
 };
 
 
@@ -28,6 +33,7 @@ onSearchTermSubmit = async (searchTerm) => {
     return (
       <div className="ui container">
         <SearchBar onSearchTermSubmit={this.onSearchTermSubmit} />
+        // {`I have ${this.state.videos.length} videos.`}
       </div>
     );
   }
