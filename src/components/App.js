@@ -1,4 +1,6 @@
 import React from 'react';
+// Import youtube api axios config.
+import youTube from '../apis/youtube';
 
 /* import custom components */
 import SearchBar from './SearchBar';
@@ -7,7 +9,6 @@ class App extends React.Component {
 
 // Form submit handler method.
 onSearchTermSubmit = (searchTerm) => {
-  console.log(searchTerm);
 
 };
 

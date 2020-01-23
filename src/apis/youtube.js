@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const youtTube = axios.create({
+const youTube = axios.create({
   baseURL: 'https://www.googleapis.com/youtube/v3',
   params: {
     part: 'snippet',
