@@ -4,7 +4,9 @@ import VideoItem from './VideoItem';
 
 const VideoList = (props) => {
   return (
-    <div>VideoList</div>
+    <div>
+      <VideoItem />
+    </div>
   );
 };
 
