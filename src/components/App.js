@@ -6,7 +6,10 @@ import youTube from '../apis/youtube';
 import SearchBar from './SearchBar';
 
 class App extends React.Component {
-
+  // Component State Object.
+  state = {
+    videos: []
+  };
 // Form submit handler method.
 onSearchTermSubmit = async (searchTerm) => {
   const response = await youTube.get('/search', {
@@ -18,7 +21,6 @@ onSearchTermSubmit = async (searchTerm) => {
       key: 'AIzaSyDhfPFv85-koi4fVvDl89KmoPYHbH4i0UY'
     }
   });
-
 };
 
 
