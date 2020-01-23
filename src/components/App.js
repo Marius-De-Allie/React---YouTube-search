@@ -9,6 +9,15 @@ class App extends React.Component {
 
 // Form submit handler method.
 onSearchTermSubmit = (searchTerm) => {
+  youTube.get('/search', {
+    params: {
+      q: searchTerm,
+      part: 'snippet',
+      type: 'video',
+      maxResults: 5,
+      key: 'AIzaSyDhfPFv85-koi4fVvDl89KmoPYHbH4i0UY'
+    }
+  });
 
 };
 
