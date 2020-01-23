@@ -9,7 +9,7 @@ class App extends React.Component {
 
 // Form submit handler method.
 onSearchTermSubmit = async (searchTerm) => {
-  youTube.get('/search', {
+  const response = await youTube.get('/search', {
     params: {
       q: searchTerm,
       part: 'snippet',
