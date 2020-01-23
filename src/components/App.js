@@ -8,7 +8,7 @@ import SearchBar from './SearchBar';
 class App extends React.Component {
 
 // Form submit handler method.
-onSearchTermSubmit = (searchTerm) => {
+onSearchTermSubmit = async (searchTerm) => {
   youTube.get('/search', {
     params: {
       q: searchTerm,
