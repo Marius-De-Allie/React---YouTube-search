@@ -8,7 +8,7 @@ const VideoList = ({videos}) => {
   });
   return (
     <div>
-      <VideoItem />
+      {renderedList}
     </div>
   );
 };
