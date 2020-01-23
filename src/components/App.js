@@ -35,6 +35,7 @@ onSearchTermSubmit = async (searchTerm) => {
       <div className="ui container">
         <SearchBar onSearchTermSubmit={this.onSearchTermSubmit} />
         // {`I have ${this.state.videos.length} videos.`}
+        <VideoList />
       </div>
     );
   }
