@@ -7,6 +7,7 @@ class App extends React.Component {
 
 // Form submit handler method.
 onSearchTermSubmit = (searchTerm) => {
+  console.log(searchTerm);
 
 };
 
