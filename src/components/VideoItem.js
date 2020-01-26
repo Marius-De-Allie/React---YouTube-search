@@ -9,8 +9,10 @@ const VideoItem = ({video}) => {
         alt={video.snippet.title}
       />
       <div className="content">
-        {video.snippet.title}
-      <div>
+        <div className="header">
+          {video.snippet.title}
+        </div>
+      </div>
     </div>
   );
 };
