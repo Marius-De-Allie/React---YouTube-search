@@ -31,7 +31,7 @@ onSearchTermSubmit = async (searchTerm) => {
 };
 
 onVideoSelect = (video) => {
-  console.log(`from the App!, ${video}.`);
+  console.log(video);
 };
 
   render() {
