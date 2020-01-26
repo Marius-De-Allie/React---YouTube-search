@@ -9,7 +9,8 @@ import VideoList from './VideoList';
 class App extends React.Component {
   // Component State Object.
   state = {
-    videos: []
+    videos: [],
+    selectedVideo: null
   };
 // Form submit handler method.
 onSearchTermSubmit = async (searchTerm) => {
@@ -28,6 +29,8 @@ onSearchTermSubmit = async (searchTerm) => {
     videos: [...response.data.items]
   }));
 };
+
+
 
 
   render() {
