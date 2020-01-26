@@ -8,7 +8,9 @@ const VideoItem = ({video}) => {
         src={video.snippet.thumbnails.medium.url}
         alt={video.snippet.title}
       />
-      {video.snippet.title}
+      <div className="content">
+        {video.snippet.title}
+      <div>
     </div>
   );
 };
