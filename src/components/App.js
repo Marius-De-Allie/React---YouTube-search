@@ -30,8 +30,9 @@ onSearchTermSubmit = async (searchTerm) => {
   }));
 };
 
-
-
+onVideoSelect = (video) => {
+  console.log(`from the App!, ${video}.`);
+};
 
   render() {
     return (
