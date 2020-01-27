@@ -42,7 +42,9 @@ onVideoSelect = (video) => {
         <SearchBar onSearchTermSubmit={this.onSearchTermSubmit} />
         <div className="ui grid">
           <div className="ui row">
-            <VideoDetail video={this.state.selectedVideo} />
+            <div className="eleven wide column">
+              <VideoDetail video={this.state.selectedVideo} />
+            </div>
             <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect} />
           </div>
         </div>
