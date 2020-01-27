@@ -13,6 +13,10 @@ class App extends React.Component {
     videos: [],
     selectedVideo: null
   };
+// Perform a default search when the component 1st loads.
+  componentDidMount() {
+    this.onSearchTermSubmit('nature');
+  }
 // Form submit handler method.
 onSearchTermSubmit = async (searchTerm) => {
   const response = await youTube.get('/search', {
