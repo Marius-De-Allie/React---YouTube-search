@@ -40,7 +40,7 @@ onVideoSelect = (video) => {
     return (
       <div className="ui container">
         <SearchBar onSearchTermSubmit={this.onSearchTermSubmit} />
-        <VideoDetail />
+        <VideoDetail video={this.state.selectedVideo} />
         <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect} />
       </div>
     );
