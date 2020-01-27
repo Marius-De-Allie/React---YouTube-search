@@ -5,3 +5,5 @@ const VideoDetail = (props) => {
     <div>VideoDetail</div>
   )
 };
+
+export default VideoDetail;
