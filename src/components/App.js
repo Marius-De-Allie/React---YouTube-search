@@ -5,6 +5,7 @@ import youTube from '../apis/youtube';
 /* import custom components */
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
+import VideoDetail from './VideoDetail';
 
 class App extends React.Component {
   // Component State Object.
