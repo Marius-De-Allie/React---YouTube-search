@@ -45,7 +45,9 @@ onVideoSelect = (video) => {
             <div className="eleven wide column">
               <VideoDetail video={this.state.selectedVideo} />
             </div>
-            <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect} />
+            <div className="five wide column">
+              <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect} />
+            </div>
           </div>
         </div>
       </div>
