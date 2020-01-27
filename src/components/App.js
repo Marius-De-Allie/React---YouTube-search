@@ -27,7 +27,8 @@ onSearchTermSubmit = async (searchTerm) => {
   console.log(response.data.items);
   // Update component state with return search results.
   this.setState(() => ({
-    videos: [...response.data.items]
+    videos: [...response.data.items],
+    selectedVideo: response.data.items[0]
   }));
 };
 
