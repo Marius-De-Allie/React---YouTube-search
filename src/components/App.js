@@ -31,7 +31,8 @@ onSearchTermSubmit = async (searchTerm) => {
 };
 
 onVideoSelect = (video) => {
-  console.log(video);
+  this.setState(() => ({selectedVideo: video}))
+
 };
 
   render() {
