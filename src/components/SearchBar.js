@@ -2,7 +2,7 @@ import React from 'react';
 
 class SearchBar extends React.Component {
   state = {
-    searchTerm: 'Food'
+    searchTerm: ''
   };
   inputHandler = (evt) => {
     const searchValue = evt.target.value;
